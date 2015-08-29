@@ -87,7 +87,7 @@ class rsyslog (
   $tls_tcp_server        = $::rsyslog::params::tls_tcp_server,
   $tls_listen_port       = $::rsyslog::params::tls_listen_port,
   $udp_server            = $::rsyslog::params::udp_server,
-  $udp_listen_address    = $::rsyslog::parmas::udp_listen_address,
+  $udp_listen_address    = $::rsyslog::params::udp_listen_address,
   $udp_listen_port       = $::rsyslog::params::udp_listen_port,
   $rule_dir              = '/etc/rsyslog.simp.d',
   $enable_logging        = defined('$::enable_logging') ? { true => $::enable_logging, default => hiera('enable_logging',true) },
